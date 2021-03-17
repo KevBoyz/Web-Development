@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Kevin Emmanuel">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,900;1,300;1,400;1,600&display=swap" rel="stylesheet">  
+    <title>Global Atributes</title>
+</head>
+<body>
+    <header>
+        <h1>Global Atributes HTML5</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Acesskey</h2>
+            <p>
+                O atributo <code>acesskey</code> gera uma tecla de atalho para um elemento no site<br>
+                Exemplo: <input type="button" accesskey="s" value="press s" tabindex="-1"v class="cst-input"> -> alt+key
+            </p>
+            <h2>Autocapitalize</h2>
+            <p>
+                <code>autocapitalize</code> serve para strings, definindo letras maiusculas e minusculas de inputs 
+                <br>digitados pelo usuario.<br>
+                Exemplo: <input type="text" autocapitalize="on" value="Digite algo" contenteditable="true" tabindex="-1"><br><br>
+                <b style="font-size: 1.5rem;">O elemento deve receber um dos seguintes valores:</b>
+                
+                <ul>
+                    <li><code>off</code> ou <code>none</code>:  Nenhuma capitalização é aplicada (por padrão as letras serão minúsculas)</li>
+                    <li><code>on</code> ou <code>sentences</code>: A primeira letra de cada sentença será por padrão uma letra maíuscula; todas as demais letras serão por padrão minúsculas.</li>
+                    <li><code>words</code>: A letra inicial de cada palavra serão por padrão maiúsculas; todas as demais letras serão por padrão minúsculas.</li>
+                    <li><code>characters</code>: Todas as letras deverão ser maiúsculas por padrão.</li>
+                </ul>
+           </p>
+           <h2>Hidden</h2>
+           <p>
+               <code>hidden</code> simplesmente oculta algo, exemplo:
+               <p hidden>Paragrafo irrelevante</p>
+           </p>
+           
+           <article id="language atributes">
+                <h2>Spellcheck</h2>
+                <p>
+                    <code>spellcheck</code> define se o elemento pode ser verificado por erros de ortografia<br>
+                    por ser booleano ele recebe apenas os valores true ou false. Exemplo: <span spellcheck="false">Não corrija esse textto</span>
+    
+                </p>
+                <h2>Translate</h2>
+                <p>
+                    O atributo <code>translate</code> indica ao navegador se o elemento deve ser traduzido ou não (muito usado pelo google)<br>
+                    mas não suportado pelo <span translate="no">Internet Explorer e Fire fox</span><br>
+                    ele recebe os valores yes ou no.
+                </p>
+                <h2>Language</h2>
+                <p>
+                    <code>lang</code> serve para definir em qual idioma um texto foi escrito.<br>
+                    Exemplo: <span lang="en-US" translate="no" id="bold"><b>Hello<b></span>
+                </p>
+           
+        </article>
+           
+            <h2>Tabindex</h2>
+            <p>
+                <code>tabindex</code>
+                É um atributo que recebe valores inteiros e indica se um elemento pode receber o foco de entrada de valores (é focável), se ele deve entrar<br>
+                na sequência da navegação pelo teclado (através da tecla TAB), e qual posição da sequência. Sobre seus valores:<br>
+                <input type="button" value="Botão" tabindex="3"> <input type="button" value="Botão" tabindex="1"> <input type="button" value="Botão" tabindex="2"><input type="button" value="Botão" tabindex="4"><input type="button" value="Botão" tabindex="5"><input type="button" value="Botão" tabindex="7">
+            </p>
+            <h2>Input Mode(apenas para input)</h2>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inputmode">Detalhes</a>
+        </section>
+    </main>
+    
+    <footer></footer>
+</body>
+</html>

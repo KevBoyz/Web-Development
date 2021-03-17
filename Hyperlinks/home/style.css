@@ -1,0 +1,22 @@
+
+h1 {
+    color:black;
+    background-color:rgba(133, 134, 133, 0.603);
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+p {
+    margin-left: 3rem;
+    font-size: 1.5rem; 
+}
+
+a {
+    color:blue;
+}

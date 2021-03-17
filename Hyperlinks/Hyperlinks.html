@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Kevin Emmanuel">
+    <title>Hyperlinks learning</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home/style.css">
+</head>
+<body>
+    <style>
+        * {
+            font-family: Ubuntu;
+        }
+    </style>
+    <header>
+        <h1>Hyperlinks in HTML5</h1>
+    </header>
+    
+    <main>
+        <article>
+            <p>
+                <h2>Common Links</h2>
+                <ul>
+                    <li>Simple Link declaration: <a href="https://github.com/">Github</a> <br></li>
+                    <li>Now with Title atribute: <a href="https://github.com/" title="Click here :)">Github</a></li><br><br>
+
+                </ul>
+            </p>
+            <h2>Image link</h2>
+            <a href="https://en.wikipedia.org/wiki/Dog">
+                <img src="./gabiru.jpeg" alt="Cachorra gabiru">
+            </a>
+            <p>
+                <b>Alt atribute apears if image don't loading</b>
+            </p>
+        </article>
+        <article>
+            <h2>Linking HTML in directories</h2>
+            <p>
+                 the atribute (target="_blank") open new window to link<br><br>
+                
+                In the same folder
+                <a href="linked.html" target="_blank">My another site!</a><br>
+                In top Level folder
+                <a href="home/homepage.html" target="_blank">The site homepage</a>
+            </p>
+            <p>
+                <h2>Document fragment</h2>
+                <a href="linked.html#name">Name</a><br>
+                <h2>Exemple:</h2>
+                <a href="Hyperlinks.html#img">Site img</a>
+            </p>
+        </article>
+        <article>
+            <h2>Download links</h2>
+            <p>
+                 In this exemple I will use local link, but you migth use a URL to<br><br>
+                Exemple: 
+                <a href="./gabiru.jpeg" download="gabiru.jpeg">Download jpeg</a><br><br>
+                (./) reference that the file is in the same directory as the executed HTML code
+            </p>
+        </article>
+        <article>
+            <h2>E-mail Link</h2>
+            <p>
+                <a href="mailto:nowhere@mozilla.org" target="_blank">Send a mail to mail to</a><br>
+                compost link <a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+                    Send mail with cc, bcc, subject and body
+                  </a>
+            </p>
+        </article>
+    </main>
+    
+    <footer></footer>
+</body>
+</html>

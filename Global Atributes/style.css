@@ -1,0 +1,39 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+h1 {
+    color:black;
+    background-color:rgba(133, 134, 133, 0.603);
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+code, a {
+    color:mediumblue;
+    font-style: oblique;
+}
+input {
+    size: 3rem;
+    box-sizing:content-box;
+    margin: 5px;
+    border-radius: 10px 20px;
+    height: 20px;
+    width: 10rem;
+    border-color: darkblue;
+    text-align: center;
+}
+.cst-input {
+    width: 6rem;
+}
+p , ul, a{
+    margin-left: 4rem;
+}
+a {
+    font-size: 2rem;
+}
