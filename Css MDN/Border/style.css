@@ -24,7 +24,8 @@ h1 {
     margin-bottom: 40px;
 }
 
-p {
+#Default p {
+    font-size: 0.75em;
     text-shadow: 1px 1px 1px #1443a728;
     background-color: white;
     padding: 10px;
@@ -36,33 +37,96 @@ p {
     margin-bottom: 15px;
 }
 
+#Custom .normal {
+    font-size: 0.75em;
+    text-shadow: 1px 1px 1px #1443a728;
+    background-color: white;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    color: blue;
+    border-color: #1442a7;
+    margin-bottom: 15px;
+}
+
+h2 {
+    display: inline;
+    color: white;
+    font-size: 2em;
+}
+
+#Default {
+    margin-bottom: 60px;
+}
+
+
 #solid {
     border: 3px solid ;
     display: inline;
-    margin-right: 28px;
+    margin-right: 10px;
 }
 
 #dobleThick {
     border: thick double ;
     display: inline;
-    margin-right: 28px;
-}
-
-#ridge {
-    border: 15px ridge #1465a7;
-margin-top: 10px;
-
+    margin-right: 10px;
+    
 }
 
 #dashed {
     border: 4px dashed #1465a7;
+    margin-right: 10px;
     display: inline;
-    
 }
 
 #dotted {
     border: dotted;
-    margin-bottom: 20px;
-    margin-top: 40px;
+    display: inline;
+    margin-right: 10px;
 }
 
+#ridge {
+    border: 15px ridge #1465a7;
+    display: inline;
+    margin-right: 10px;
+    
+}
+
+#medium {
+    border: 5px medium #1465a7;
+    display: inline;
+}
+
+
+
+#custom1 {
+    margin-right: 10px;
+    display: inline;
+    border-top: solid;
+    border-left: double thick;
+    border-right: double thick;
+    border-bottom: solid;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#custom2 {
+    display: inline;
+    border: 4px solid;
+    border-radius: 9999px;
+    margin-right: 10px;
+}
+
+#custom3 {
+    display: inline;
+    border: 3px solid #1442a7;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    background-image: url(image.jpeg);
+    background-size: contain;
+    background-repeat: 3;
+    background
+}
