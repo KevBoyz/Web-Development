@@ -1,0 +1,49 @@
+body {
+    font-family: monospace;
+}
+
+h1{
+    text-align: center;
+    font-size: 500%;
+    border-bottom: 2px solid black;
+}
+
+p {
+    background-color: rgba(232, 243, 232, 0.473);
+}
+
+#n1 {
+    padding: 2px;
+    border: 3px solid #666666;
+    width: 80px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#n2 {
+    font-size: 2.5em;
+    overflow: hidden;
+    border: 3px solid #666666;
+    width: 70px;
+    margin-bottom: 0;
+}
+
+#n3 {
+    font-size: 1.5em;
+    text-align: left;
+    overflow: scroll;
+    border: 3px solid #666666;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 0;
+}
+
+#n4 {
+    
+    font-size: 1.5em;
+    text-align: left;
+    overflow-y: scroll;
+    border: 3px solid #666666;
+    width: 150px;
+    height: 150px;
+}

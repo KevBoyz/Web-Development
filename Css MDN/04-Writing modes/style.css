@@ -1,0 +1,53 @@
+body {
+    font-family: monospace;
+    margin: autp;
+}
+
+.site {
+    background-color: beige;
+    font-size: 1.2em;
+}
+
+.site div {
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    padding: 5px;
+}
+
+.horizontal {
+    writing-mode: horizontal-tb;
+    margin-bottom: 10px;
+}
+
+.thin {
+    block-size: 130px;
+    writing-mode: horizontal-tb;
+    width: 190px;
+    margin-bottom: 10px;
+}
+.vertical {
+    inline-size: 200px;
+    writing-mode: vertical-rl;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.box {
+    inline-size: 200px;
+    writing-mode: horizontal-tb;
+  }
+  
+.wrapper  h2 {
+    border-bottom: 5px solid black;
+}
+
+.physical {
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-right: 2em;
+    padding-top: 2px;
+    border-top: 5px solid pink;
+    border-right: 10px dotted rebeccapurple;
+    border-bottom: 1em double orange;
+    border-left: 1px solid black;
+}
