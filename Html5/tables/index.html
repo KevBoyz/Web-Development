@@ -54,27 +54,27 @@
 
             <thead>
                 <tr>
-                    <th rowspan="2">Products</th> <!--Take two lines-->
-                    <th colspan="2">Store 2</th> <!--Take two colums-->
-                    <th colspan="2">Store 1</th>
+                    <th rowspan="2" scope="col">Products</th> <!--Take two lines-->
+                    <th colspan="2" scope="colgroup">Store 2</th> <!--Take two colums-->
+                    <th colspan="2" scope="colgroup">Store 1</th>
                 </tr>
                 <tr>
-                    <th>Produced</th>
-                    <th>Sold</th>
-                    <th>Produced</th>
-                    <th>Sold</th>
+                    <th scope="col">Produced</th>
+                    <th scope="col">Sold</th>
+                    <th scope="col">Produced</th>
+                    <th scope="col">Sold</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th>Product1</th>
+                    <th scope="row">Product1</th>
                     <td>100</td>
                     <td>54</td>
                     <td>20</td>
                     <td>7</td>
                 </tr>
                 <tr>
-                    <th>Product2</th>
+                    <th scope="row">Product2</th>
                     <td>120</td>
                     <td>80</td>
                     <td>210</td>
@@ -83,7 +83,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th colspan="5" style="background-color: rgb(230, 129, 47);">End Table</th>
+                    <th colspan="5" scope="row" style="background-color: rgb(230, 129, 47);">End Table</th>
                 </tr>
             </tfoot>
         </table>

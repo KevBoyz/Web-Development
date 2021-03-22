@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap');
+
+main {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+table {
+    table-layout: fixed; /*Com o table-layout: fixed, você pode dimensionar suas colunas de acordo com a largura de seus títulos e, em seguida, lidar com seu conteúdo conforme apropriado.*/
+    width: 100%; /*Torna a tabela de melhor vizualização*/
+    border-collapse: collapse; /*Um border-collapse valor de collapse é uma prática recomendada padrão para qualquer esforço de estilização de mesa. Por padrão, quando você define bordas nos elementos da tabela, todos eles terão espaçamento entre eles*/
+    border: 3px solid purple;
+}  
+th, td {
+    padding: 20px;
+}
+
+td {
+    letter-spacing: 1px;
+  }
+
+tbody td{
+    text-align: center;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+thead, tfoot {
+    background-image: url(image.jpg);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+thead th, tfoot th, tfoot td {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+    border: 3px solid purple;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ff33cc;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #e495e4;
+  }
+  caption {
+    font-family: 'Rock Salt', cursive;
+    padding: 20px;
+    font-style: italic;
+    caption-side: bottom;
+    color: #666;
+    text-align: right;
+    letter-spacing: 1px;
+  }
+  
