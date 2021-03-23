@@ -1,0 +1,68 @@
+body {
+    font-family: sans-serif;
+}
+
+li {
+    list-style-type: disc;
+}
+/*Estilização com base na posição*/
+
+li em {
+    color: green;
+}
+
+/*Multiplas tags em um seletor*/
+
+
+/*Estilização com base no estado*/
+a:link {
+    color: pink;
+}
+
+a:visited {
+    color: green;
+}
+/*Combining Tags*/
+
+/*Descendencia*/
+li, span {
+    color: rgb(31, 64, 124);
+}
+
+/*filial Selection*/
+ul > li { /*li is defined as son of ul and herda configurations*/
+    font-size: 16px;
+}
+
+
+/*nth-child*/
+#nth-1 :nth-child(1){
+    font-size: 1.5em;
+}
+#nth-1 :nth-child(2){
+    font-size: 1.6em;
+}
+#nth-1 :nth-child(3){
+    font-size: 1.7em;
+}
+
+#nth-2 {
+    margin-top: 4px;
+    height: 140px;
+    width: 90px;
+    border: 1px solid blue;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px black;
+    letter-spacing: 1px;
+    padding: 2px;
+    text-align: center;
+}
+
+#nth-2 :nth-child(odd) {
+    background-color: #ff8614;
+    color: white;
+}
+#nth-2 :nth-child(even) {
+    background-color: #ffa639;
+    color: white;
+}
