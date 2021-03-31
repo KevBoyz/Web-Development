@@ -28,6 +28,7 @@ img {
 }
 
 h1 {
+    color: rgb(207, 221, 207);
     text-align: center;
     font-size: 2.5em;
     background-image: linear-gradient(to left, yellow,  #00aeff, brown);
@@ -35,23 +36,33 @@ h1 {
     margin-top: 10px;
     text-shadow: 0px 2px 3px blue, 2px 0px 3px #ff0000;
     box-shadow: 0px 0px 2px black;
+    margin-bottom: 10px;
+}
+
+h2 {
+    padding: 2px;
+    margin: 0;
+    text-align: left;
 }
 
 p {
     text-align: justify;
-    padding-top: 20px;
+    line-height: 22px;
 }
 
 li {
     padding: 3px;
+    list-style: none;
+    text-align: left;
 }
 
 ol {
-    background-color: rgb(218, 218, 218);
+    background-color: rgba(0, 0, 0, 0.089);
     border-radius: 10px;
-    padding: 4px;
+    padding: 10px;
     width: 50%;
     margin-left: 50px;
+    box-shadow: 0px 0px 1px black;
 }
 
 a {
@@ -59,11 +70,51 @@ a {
     color: rgb(0, 0, 182);
 }
 
+a:hover {text-decoration: underline blue;}
+a:active {color: #ff008c; text-decoration: underline #ff008c; }
+
+
 #box {
-    height:200px;
+    height: 130px;
 }
 
 #content {
-    width: 400px;
+    width: 900px;
+    margin: 55px 0 0 0;
+}
+
+#clm1{display: flex; flex-flow: row; width: 60%;}
+#clm2{display: flex; flex-flow: row; width: 90%;}
+
+nav a {
+    color: blue;
+    text-decoration: none;
+    display: inline-block;
+    height: 25px;
+    width: 115px;
+    padding: 10px 2px 2px 5px;
+    background-image: linear-gradient(-45deg ,#ffe600, #ffc783);
+    border: 1px solid #ffb835;
+    border-radius: 15px 20px 15px 20px;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 1px 1px 1px #a3a3fd94, 0px 0px 4px orange;
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-size: 1.2em;
+    margin-bottom: 2px;
+}
+nav a:visited {color: purple;}
+nav a:hover {background-image: linear-gradient(-45deg ,#e2cc00, #ffc783);text-decoration: none;}
+nav a:active {background: #ffe283}
+
+#img {
     margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 590px;
+    display: flex;
+    justify-content: space-around;
 }
