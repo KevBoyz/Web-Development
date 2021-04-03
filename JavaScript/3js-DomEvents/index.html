@@ -5,28 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        div {height: 200px; width: 200px; background:green; 
+        .div {height: 200px; width: 200px; background:green; 
         color: white;font-family:
         monospace;line-height:200px;
-        text-align: center; font-size: 1.8em;}
+        text-align: center; font-size: 1.8em; margin-bottom:40px;}
+        div {font-family: Arial, Helvetica, sans-serif;}
     </style>
     <title>Dom Events</title>
 </head>
 <body>
     <main>
-        <div id="box">
+        <div id="box" class="div">
             Look at Me
         </div>
+        <input type="number" name="inpt1" id="inpt1"> +
+        <input type="number" name="inpt2" id="inpt2">
+        <input type="button" value="Calculate" id="button" onclick="calculate()">
+        <div id="result">Result</div>
         <script>
             let div = document.getElementById('box')
+            let button = window.document.getElementById('button')
             
             div.addEventListener ('click', clicked)
             div.addEventListener ('mouseenter', enter)
             div.addEventListener ('mouseout', leave)
 
+
             function clicked() {div.innerText = 'u click me :3'}
             function enter() {div.innerText = 'Senpai!'; div.style.background = 'red'}
             function leave() {div.innerText = 'Note me :('; div.style.background = 'green'}
+
+            function calculate() {
+                let n1 = Number( document.getElementById('inpt1').value)
+                let n2 = Number(document.getElementById('inpt2').value)
+                let result = window.document.getElementById('result')
+                let sum = n1 + n2 
+                result.innerHTML = `${n1} + ${n2} = ${sum}`
+            }
+
         </script>
     </main>
 </body>
