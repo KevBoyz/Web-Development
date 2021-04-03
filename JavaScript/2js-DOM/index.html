@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Dom</title>
+</head>
+<body>
+    <style>
+        body {background-image: linear-gradient(to left, #0051ff, #003cff); font-family: "Helvetica"; height:100%;}
+        main {color: white; font-size: 1.5em;}
+    </style>
+    <main>
+        <h1>Dom in JavaScript</h1>
+        <p>Hello, <strong>I'm paragraph</strong></p>
+        <div id="item">GetElementById</div>
+        <script>
+            let p1 = document.getElementsByTagName('p')[0]
+            let bd = document.body
+            document.write(`${p1.innerHTML} writed in Js`) //Inertext mostra apenas o texto dentro da tag, tags filhas são ignoradas como <strong>
+            p1.style.textDecoration = 'underline 1px' 
+            //bd.style.background = 'gray'
+            let item = document.querySelector('div#item')
+            item.style.background = 'green'
+            
+            // Query Selector
+
+        </script>
+    </main>
+</body>
+</html>
