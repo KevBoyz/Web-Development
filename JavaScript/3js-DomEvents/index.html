@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {height: 200px; width: 200px; background:green; 
+        color: white;font-family:
+        monospace;line-height:200px;
+        text-align: center; font-size: 1.8em;}
+    </style>
+    <title>Dom Events</title>
+</head>
+<body>
+    <main>
+        <div id="box">
+            Look at Me
+        </div>
+        <script>
+            let div = document.getElementById('box')
+            
+            div.addEventListener ('click', clicked)
+            div.addEventListener ('mouseenter', enter)
+            div.addEventListener ('mouseout', leave)
+
+            function clicked() {div.innerText = 'u click me :3'}
+            function enter() {div.innerText = 'Senpai!'; div.style.background = 'red'}
+            function leave() {div.innerText = 'Note me :('; div.style.background = 'green'}
+        </script>
+    </main>
+</body>
+</html>
