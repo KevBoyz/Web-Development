@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello user</title>
+</head>
+<body>
+    
+    <header><h1>Age Veryfy</h1></header>
+    <main>
+        <section>
+            <div>
+                <span>Ano de nascimento</span>:
+                <input type="number" name="year" id="year"> <br>
+                <p>
+                    Sexo:
+                    <input type="radio" name="radsex" id="mas" checked>
+                    <label for="mas">Masculino</label>
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="fem">Feminino</label>
+                </p>
+            </div>
+            <div>
+                <input type="button" value="Verificar Idade" id="button" onclick="calculate()">
+                <p id="display"></p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy;KevBoyz</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

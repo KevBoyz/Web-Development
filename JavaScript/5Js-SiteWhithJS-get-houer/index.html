@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello user</title>
+</head>
+<body>
+    <header><h1>Day Time</h1></header>
+    <main>
+        <p id="display">Testando site</p>
+        <img src="" alt="photo">
+    </main>
+    <script>
+        let display = document.getElementById('display');
+        let body = document.getElementsByTagName('body')[0]
+        let img = document.getElementsByTagName('img')[0]
+        let time = new Date().getHours()
+        if (time > 5 && time < 13) {
+            display.innerText = `Now is ${time} hours, good day!`
+            body.style.background = '#ffbb00'
+            img.src = 'morning.png'
+        } else if (time <= 17) {
+            display.innerText = `Now is ${time} hours, good afternoon!`
+            body.style.background = '#a78000'
+            img.src = 'afternoon.png'
+        } else {
+            display.innerText = `Now is ${time} hours, good nigth`
+            body.style.background = '#515154'
+            img.src = 'nigth.png'
+        }
+    </script>
+</body>
+</html>
