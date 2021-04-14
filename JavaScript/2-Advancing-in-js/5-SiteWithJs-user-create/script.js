@@ -5,9 +5,14 @@ function newPerson(name, age, sex, email) {
     person.name = name
     person.age = age
     person.sex = sex
-    person.email = email.value
+    person.email = email
     return person
 }
+
+function clear(name='entrada') {
+    var entradas = document.querySelectorAll("input[name='"+name+"']");
+    [].map.call(entradas, entrada => entrada.value = '');
+  }
 
 function sexDefine() {
     let rsex = document.getElementsByName('radsex')
@@ -29,10 +34,12 @@ function showData() {
 }
 
 function capture() {
-    let name = document.getElementById('name')
+    let name = document.getElementById('name').value
     let age = Number(document.getElementById('age').value)
-    let email = document.getElementById('email')
+    let email = document.getElementById('email').value
+    if (name === ' ' || name.length <= 0) {window.alert('Invalid name!');return}
     if (age > 200 || age <= 0) {window.alert('Invalid Age!');return}
-    else{newPerson(name.value, age, sexDefine(), email);showData()}
-    
+    if (email === ' ' || email.length <= 0) {window.alert('Invalid email!');return}
+    else{newPerson(name, age, sexDefine(), email);clear();showData()
+    }
 }
