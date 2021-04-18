@@ -98,7 +98,7 @@ let some = arr.some(  // Read all elements in array, if your condition is true, 
 console.log(some)
 
 console.log(arr.reverse()) // Reverse the array
-
+arr.reverse()
 let reduce = arr.reduce(  // Run all elements, do operation and save state
     function (v1, v2, ind, arr) {
         return v1 + v2
@@ -106,6 +106,7 @@ let reduce = arr.reduce(  // Run all elements, do operation and save state
 )
 console.log(reduce)
 
-console.log(arr.shift)  //Remove first element and return then
+console.log(arr.shift())  //Remove first element and return then
+console.log(arr.unshift(-1)) //Add -1 to ind[0] of array
 console.log(arr.slice(2, 4)) // Cut the array (start, end)
 console.log(arr.sort())  // Orgnize the array in alphabetical and numerical order
