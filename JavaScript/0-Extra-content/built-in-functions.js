@@ -41,8 +41,15 @@ let arr2 = ['a', 'b', 'c']
 let arr3 = [5, 5]
 
 let arr = arr1.concat(arr2) // Concat arr1 and arr2
+arr.pop() // Del last array element
+
 
 console.log(arr)
+
+
+console.log(arr.indexOf(2))  // return index of specified element
+console.log(arr3.lastIndexOf(5)) // Resturn index of last element that specified
+console.log(arr.join(' - ')) //Convert array to string 
 
 console.log(arr.every(      // Return true if all elements in array have equal type, else, false
     function verifyElements(elem, ind, obj) {
@@ -74,7 +81,20 @@ let arraySum = arr3.forEach( // Sum of itens exemple
 )
 console.log(s)
 
-console.log(arr.indexOf(2))  // return index of specified element
+let mod = arr.map(   // Read all elements in array and modify then as you want
+    function(elem) {
+        if (typeof elem == 'number') {return elem * 2}
+        else {return elem}
+           
+    }
+)
+console.log(mod)
 
+let some = arr.some(  // Read all elements in array, if your condition is true, return true
+    function(elem) {
+        return (elem == 2) // == 2 exists in array?
+    }
+)
+console.log(some)
 
-
+console.log(arr.reverse()) // Reverse the array
