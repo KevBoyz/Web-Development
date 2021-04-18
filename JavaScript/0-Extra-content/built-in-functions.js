@@ -98,3 +98,14 @@ let some = arr.some(  // Read all elements in array, if your condition is true, 
 console.log(some)
 
 console.log(arr.reverse()) // Reverse the array
+
+let reduce = arr.reduce(  // Run all elements, do operation and save state
+    function (v1, v2, ind, arr) {
+        return v1 + v2
+    }
+)
+console.log(reduce)
+
+console.log(arr.shift)  //Remove first element and return then
+console.log(arr.slice(2, 4)) // Cut the array (start, end)
+console.log(arr.sort())  // Orgnize the array in alphabetical and numerical order
