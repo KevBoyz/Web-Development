@@ -55,24 +55,26 @@ console.log(arr.filter(     // Make filtration of elements
         return typeof elem == 'string'
     }
 ))
+
 let data = ''
 arr.forEach(                // Execute the process for element in arry
     function display(elem, ind) {
         data += `arr[${ind}] = ${elem}\n`    
-    }''
+    }
 )
+
 console.log(data)
+
 let s = 0
-let arraySum = arr3.forEach(
+let arraySum = arr3.forEach( // Sum of itens exemple
     function sum(elem, ind) {
         if (arr.length == ind+1) {return s}
-        s += elem
+        else {s += elem}
     }
 )
 console.log(s)
 
-
-
-
 console.log(arr.indexOf(2))  // return index of specified element
+
+
 
