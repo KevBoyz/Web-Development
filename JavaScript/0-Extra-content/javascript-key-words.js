@@ -15,8 +15,8 @@
 
 // Exemple
 
-const kevin =  new newUser('Kevin', 14)
-function newUser(name, age) {
+const kevin =  new Person('Kevin', 14)
+function Person(name, age) {
     'use strict';
     this.name = name
     this.age = age
