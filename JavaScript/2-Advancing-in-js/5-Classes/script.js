@@ -14,7 +14,7 @@ class Person {
             return false
         }
     }
-    
+
 
     year() {
         return new Date().getFullYear() - this.age
