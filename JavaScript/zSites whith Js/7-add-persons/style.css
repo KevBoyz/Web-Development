@@ -1,0 +1,33 @@
+body {font-family: Arial, Helvetica, sans-serif; background-color:rgb(0, 109, 211);}
+
+main {
+    width: 40%;
+    height: 50%;
+    margin:auto;
+    background-color: white;
+    border-radius: 5px;
+    padding:15px;
+    box-shadow: 2px 2px 3px rgba(46, 45, 45, 0.39);
+    text-align: left;
+}
+h1 {
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #0000007c;
+    letter-spacing: 2px;
+    text-align: center;
+}
+footer p {
+    text-align:center;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #0000007c;
+    font-size: 1.4em;
+}
+
+#name, #age {
+    margin-bottom: 0.5em;
+}
+
+#button {
+    width:100%;
+}
