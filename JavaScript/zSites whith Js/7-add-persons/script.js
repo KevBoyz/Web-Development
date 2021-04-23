@@ -22,3 +22,5 @@ function istancier() {
     display.innerHTML += person.bio()+'<br>'
     person.this()
 }
+
+// Only instace
