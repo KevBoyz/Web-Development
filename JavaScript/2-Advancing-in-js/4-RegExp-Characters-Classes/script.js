@@ -18,10 +18,14 @@ console.log('S', text.match(/\S/g))
 
 console.log('b', text.match(/\b/g)) // b == backspace ( )
 
+console.log('.', text.match(/...%.../)[0]) // . == References all characters, exept the line ender
+
 // locating the 'A1bx' 
 
-console.log(text.match(/\w\d\w{2}\b/)[0]) // \w{2} == \w\w
+console.log('tests: ', text.match(/\w\d\w{2}\b/)[0]) // \w{2} == \w\w
 
 // locating ~!?;x
 
-console.log(text.match(/\S{5}/)[0])
+console.log('tests: ', text.match(/\S{5}/)[0])
+
+let re  =  /(?:\d{3}|\(\d{3}\))([-\/\.])\d{3}\1\d{4}/
