@@ -5,7 +5,7 @@
 // The big letters do invert process
 // ( \x != \X ) 
 
-let text = '~!?;xA1bx ;x´¨&`-2bCc3 D_-=*/-+^{}}[]()%$ #@dE5eFf4Gg⤏☣☠☺∾∜☳㊮㊑'
+let text = '~!?;xAã1bx ;x´¨&`-2bCc3 D_-=*/-+^{}}[]()%$ #@dE5eFf4Gg⤏☣☠☺∾∜☳㊮㊑'
 
 console.log('d', text.match(/\d/g).sort()) //| \d == 0-9 (lating numbers)
 console.log('D', text.toLowerCase().match(/\D/g).sort())
