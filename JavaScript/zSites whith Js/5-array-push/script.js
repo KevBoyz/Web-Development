@@ -1,4 +1,4 @@
-let nlist = document.getElementById('nlist')
+ let nlist = document.getElementById('nlist')
 let button = document.getElementById('button')
 let button2 = document.getElementById('button2')
 let n = Number(document.getElementById('n').value)

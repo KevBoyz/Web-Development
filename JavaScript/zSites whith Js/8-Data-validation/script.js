@@ -9,7 +9,6 @@ class Person {
         window.alert('You logged in system sucessfuly! thank you to test this login page. One object has created with your data, check the console to view it')
         console.log(this)
     }
-
 }
 
 const button = document.querySelector('#button')
@@ -46,7 +45,7 @@ function RegExp(name, email, phone, passw) {
         window.alert('Error: the <phone> cannot have backspaces')}
     else if (passw.length < 6) {
         window.alert('Error: the <password> need have 6 characters (minimum)')}
-    else if (1 + 1 === 2) {
+    else {
         const person = new Person(name, email, phone, passw)
         person.login()
     }
