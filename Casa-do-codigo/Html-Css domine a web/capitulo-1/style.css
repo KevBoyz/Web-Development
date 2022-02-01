@@ -1,0 +1,8 @@
+.container {
+    margin: 0, auto; /*Auto sempre irá centralizar na tela*/
+    width: 960px;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6; /*1.6 em relação ao tamanho da fonte (16px padrão)*/
+}
