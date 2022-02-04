@@ -1,4 +1,4 @@
-@media (max-width: 600px) { /*min-w, */
+@media (orientation: landscape) { /*min-w, max-w */
     * {
     background: rgb(0, 255, 64)!important ;
     border-color: transparent !important ;
