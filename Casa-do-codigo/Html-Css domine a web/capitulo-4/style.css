@@ -1,10 +1,11 @@
-@media print {
+@media (max-width: 600px) { /*min-w, */
     * {
-    background: transparent !important ;
-    border-color: #000 !important ;
+    background: rgb(0, 255, 64)!important ;
+    border-color: transparent !important ;
     box-shadow: none !important ;
-    color: #000 !important ;
-    text-shadow: 1px 1px 1px blue !important ;
+    color: transparent !important ;
+    text-shadow: 1px 1px 1px rgb(234, 0, 255) !important ;
+    width: 100~6+%;
     }
 }
 section{
