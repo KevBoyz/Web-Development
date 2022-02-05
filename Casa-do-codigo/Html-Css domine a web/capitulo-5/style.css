@@ -1,0 +1,177 @@
+@media (orientation: portrait) {
+    *{
+        width: 100%;
+    }
+}
+@font-face { /*Criando uma nova familia de fontes*/
+    font-family: 'Lobster';
+    font-weight: 400;
+    font-style: normal;
+    src: url(./Lobster.ttf);
+}
+@font-face {
+    font-family: 'iconic';
+    src: url(iconic_fill.woff) format('woff');
+}
+.invalid::before{
+    font-family: 'iconic';
+    color: #f00;
+    margin-right: 10px;
+    content: '\2718';
+}
+.valid::before{
+    font-family: 'iconic';
+    color:#0f0;
+    margin-right: 10px;
+    content: '\2714';
+}
+h1{
+    text-align: center;
+    letter-spacing: 1px;
+    color: #0f0;
+    text-shadow: 2px 2px 3px #f0f;
+}
+h1::after{
+    content: '\25D0';
+    font-family: 'iconic';
+}
+*{
+    font-family: 'Lobster', cursive;
+    width: 100%;
+    color: #fff;
+    font-size: 1.1em;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+main{
+    margin: 0 0 0 65px;
+    width: 90%;
+}
+p{
+    font-size: 20px;
+}
+div{
+    margin-top: 40px;
+}
+.logo{
+    display: flex;
+}
+.logo h2{
+    width: 14%;
+    padding-top: 11px;
+}
+.kvb{
+    border-radius: 50%;
+    border: 5px solid #fff;
+    font-family: 'Courier New', monospace;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 50px;
+    width: 50px;
+}
+.counter {
+    background-color: #fff;
+    border-top-left-radius: 25px 10px;
+    border-top-right-radius: 25px 10px;
+    color: #000;
+    display: block;
+    font-size: 1.7em;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+}
+.cloud-div{
+    background-color: #eee;
+    width: 50px;
+    height: 10px;
+    padding: 20px 50px;
+}
+.cloud {
+    background-color: #000;
+    border-radius: 48px;
+    display: inline-block;
+    height: 16px;
+    position: relative;
+    width: 48px;
+}
+.cloud::before {
+    background-color: #000;
+    border-radius: 50%;
+    height: 23px;
+    position: absolute;
+    left: 7px;
+    right: auto;
+    top: -10px;
+    width: 23px;
+    content: '';
+}
+.cloud::after {
+    background-color: #000;
+    border-radius: 50%;
+    content: '';
+    height: 14px;
+    position: absolute;
+    right: 7px;
+    top: -6px;
+    width: 14px;
+}
+img{
+    width: 400px;
+}
+figure {
+    position: relative;
+}
+img {
+    display: block;
+}
+figcaption {
+    bottom: 5px;
+    margin: 0 5px;
+    padding: 5px;
+    position: absolute;
+    width: 210px;
+    color: #000;
+    font-size: 1.9em;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+small{
+    color: #000;
+}
+ul {
+    height: 36px;
+    list-style:none;
+    padding: 0;
+    width: 158px;
+    background-color: rgb(30, 201, 67);
+    border: 1px solid rgba(0,0,0,0.3);
+}
+li {
+    float: left;
+    line-height: 35px;
+    font-size: 1.4em;
+    width: 50px;
+    text-align: center;
+    border-left: 1px solid rgba(255,255,255, 0.3);
+    border-right: 1px solid rgba(0,0,0, 0.3);
+    color: #000
+}
+li:first-child {
+    border-left: none;
+}
+li:last-child {
+    border-right: none;
+}
+.grand{
+    border: 2px solid #fff;
+    width: 20%;
+    height: 300px;
+    background-image: linear-gradient(200deg, #000, #0f0, #fff);
+}
+input {
+    border: 1px solid #999;
+    box-shadow: 4px 4px 3px #f00 inset, 4px 4px 3px #00f, -4px -4px 3px #0f0;
+    padding: 2px 5px;
+    width: 30%;
+}
