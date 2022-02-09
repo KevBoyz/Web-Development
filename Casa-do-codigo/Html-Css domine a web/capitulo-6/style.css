@@ -101,7 +101,25 @@ header{
     display: none;
 }
 .grid{
-    
+    margin-top: 55px;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: auto auto auto;
+}
+.grid-item{
+    background-color: aqua;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    margin-top: 20px;
+}
+.flex-item{
+    width:100%;
+    background-color: aqua;
+    margin: 0 1px 0 1px;
+    text-align: center;
 }
 
 /* Em caso de problemas com float, usar isto.
