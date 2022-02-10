@@ -1,0 +1,95 @@
+body {font-family: 'Courier New', Courier, monospace; margin: 0;}
+
+main {background-color: #2f3030; padding: 20px; margin: 0}
+
+h1 { text-shadow: 0px 0px 9px #0000ff5b; text-align: center; font-size: 1.5em; letter-spacing: 1px; color: white;}
+
+
+.box {
+    max-width: 400px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    margin: 0 auto; 
+    background-color: #3a3939d7;
+    text-shadow: 0px 0px 9px #0000ff5b;
+}
+
+#box {
+    display: flex;
+    max-width: 400px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    margin: 0 auto; 
+    background-color: #393A3A;
+    padding: 2px;
+    text-shadow: 0px 0px 9px #0000ff5b, 1px 1px 1px ;
+}
+
+.text {
+    color: white;
+    font-weight: 400;
+    margin: 5px;
+    background: #007bff;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1px;
+    border-radius: 5px;
+    text-shadow: 0px 0px 9px #0000ff5b, 1px 1px 1px
+}
+.txt {
+    flex: 1; /* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+    color: white;
+    font-weight: 400;
+    margin: 5px;
+    background: #007bff;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1px;
+    border-radius: 5px;
+    text-shadow: 0px 0px 9px #0000ff5b, 1px 1px 1px
+}
+
+.box {display: block;}
+.flex {display: flex;}
+
+.flex-row {flex-direction: row;}
+.flex-row-rv {flex-direction: row-reverse;}
+.flex-column {flex-direction: column;}
+
+.flex-warp {flex-direction: row; flex-wrap: wrap;}
+.flex-warp-rv {flex-direction: row; flex-wrap: wrap-reverse;}
+.flex-flow {flex-flow: row wrap;}
+
+/*Alinha os itens flex no container de acordo com a direção. A propriedade só funciona se os itens atuais não ocuparem todo o container. Isso significa que ao definir flex: 1; ou algo similar nos itens, a propriedade não terá mais função
+Excelente propriedade para ser usada em casos que você deseja alinhar um item na ponta esquerda e outro na direita, como em um simples header com marca e navegação.*/
+
+.flex-start {flex-flow: row wrap; justify-content: flex-start;}
+.flex-end {flex-flow: row wrap; justify-content: flex-end;}
+.flex-center {flex-flow: row wrap; justify-content: center;}
+.flex-space-between {flex-flow: row wrap; justify-content: space-between;}
+.flex-space-around {flex-flow: row wrap; justify-content: space-around;}
+
+/*O align-items alinha os flex itens de acordo com o eixo do container. O alinhamento é diferente para quando os itens estão em colunas ou linhas.
+Essa propriedade permite o tão sonhado alinhamento central no eixo vertical, algo que antes só era possível com diferentes hacks.*/
+
+.flex-align-stretch {flex-flow: row wrap; justify-content: space-between; align-items: stretch;}
+.flex-align-start {flex-flow: row wrap;  align-items: flex-start;}
+.flex-align-start .txt {flex:0;}
+.flex-align-baseline {align-items: baseline;}
+
+.flex-centralize {align-items: center; justify-content: center; align-items: center; height: 200px; max-width: 420px;}
+.flex-centralize {flex:0; padding: 10px;}
+
+/*Alinha as linhas do container em relação ao eixo vertical. A propriedade só funciona se existir mais de uma linha de flex-itens. Para isso o flex-wrap precisa ser wrap.
+Além disso o efeito dela apenas será visualizado caso o container seja maior que a soma das linhas dos itens. Isso significa que se você não definir height para o container, a propriedade não influencia no layout.*/
+
+  .container {
+    max-width: 420px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #ccc;
+    flex-wrap: wrap;
+    text-shadow: 0px 0px 9px #0000ff5b, 1px 1px 1px
+    /* align-content: stretch; */
+}
