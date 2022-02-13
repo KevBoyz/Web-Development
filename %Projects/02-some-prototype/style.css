@@ -1,0 +1,91 @@
+@media (orientation: portrait){
+    #grid{
+        grid-template-columns: 1fr !important;
+    }
+    #title{
+        margin-right: 0;
+    }
+}
+
+body {font-family: sans-serif; background-color: #161414;}
+*{
+    color: #fff;
+}
+html{
+    background-color: #292b28;
+}
+nav{
+    position: fixed;
+    background-color: #00a100;
+    margin: -17px -8px 50px -10px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+
+}
+h1 {
+    margin: 0 0 0 0;
+    color: #000;
+    font-size: 250%;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    display: inline;
+}
+a {
+    text-decoration: none;
+}
+main{
+    background-color: #292b28;
+    padding-top: 100px;
+    width: 100%;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh;
+    grid-gap: 5px;
+    width: 90%;
+    margin: 0 0 0 5%;
+    
+}
+.item{
+    padding: 0;
+    background-color: #3f423ecc;
+    font-size: 1.5em;
+    border-radius: 10px;
+}
+.item:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+.item h2, p{
+    text-align: center;
+    margin-bottom: 0;
+   
+}
+.item p{
+    margin-top: 10px;
+}
+#Pz{
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    line-break: auto
+}
+.inl{
+    display: inline;
+}
+#elm{
+    background-color: blue;
+}
+#title{
+    margin-right: 160px;
+}
+li{
+    margin-right: 10px;
+}
